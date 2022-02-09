@@ -1,0 +1,21 @@
+<div *ngIf="catData">
+    <!-- DEBUG -->
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <span class="mr-3 font-weight-bold">Debug Information - </span>
+            <span class="mr-3">Cat ID: '{{catData.id}}'</span>
+            <span class="mr-3">Cat Name: '{{catData.name}}'</span>
+            <span class="mr-3">Cat Desc: '{{catData.description}}'</span>
+            <span class="mr-3">Cat Image Src: '{{catData.imageSource}}'</span>
+        </div>
+    </div>
+
+    <!-- The actual cat. -->
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <figure (click)="catClicked()" class="p-2 cat-figure">
+                <img class="cat-img" src='{{catData.imageSource}}' alt="The cat." title='{{catData.name}}'>
+            </figure>
+        </div>
+    </div>
+</div>
