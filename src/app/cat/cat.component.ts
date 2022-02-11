@@ -16,15 +16,13 @@ export class CatComponent implements OnInit {
     imageSource: '../../assets/cats/cat_1_normal.png',
   };
 
-  constructor(private catGameService: CatGameService) { }
+  constructor(private catGameService: CatGameService) { };
 
   ngOnInit(): void {
-  }
+  };
 
   catClicked() {
-    const TAG = '\ncatClicked(), ';
-    console.log(TAG);
     this.catGameService.addPoints(1);
-  }
+  };
 
-}
+};

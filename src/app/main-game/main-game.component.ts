@@ -18,8 +18,6 @@ export class MainGameComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const TAG = '\nmain-game OnInit(), ';
-    console.log(TAG);
     this.titleService.setTitle("Game Screen");
     this.pointsToDisplay = this.catGameService.getPoints();
   };
